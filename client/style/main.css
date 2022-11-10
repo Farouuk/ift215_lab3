@@ -228,3 +228,70 @@ form .group select{
 .centrer {
     text-align: center;
 }
+
+#menu-principal li {
+    display: inline-block;
+    line-height: 50px;
+    background-color: #555555;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+nav{
+    text-align: center;
+    border: 2px solid red;
+}
+#menu-principal{
+    background-color: #444444;
+}
+#menu-principal li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#menu-principal li:hover{
+    background-color: aliceblue;
+}
+#menu-principal li:hover a{
+    color: #555555;
+}
+#texte-accueil img{
+    float: right;
+    height: 150px;
+}
+#texte-accueil, #section-inscription{
+    width: 66%;
+    margin-left: 34%;
+}
+
+#corps-principal h1{
+    text-align: center;
+}
+
+fieldset{
+    max-width: 500px;
+    margin-left: 34%;
+}
+form .group{
+    margin-bottom: 20px;
+}
+form .group label{
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    text-align: right;
+}
+form .group select{
+    width: 32%;
+}
+#renseignement-auth input{
+    width: 30%;
+}
+.submit-group {
+    max-width: 500px;
+    text-align: right;
+    padding: 14px 0px 14px 28px;
+    margin-left: 34%;
+}
+.submit-group input[type=submit]{
+    width: 150px;
+}

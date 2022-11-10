@@ -53,8 +53,8 @@ function genererMagasin(data){
 
 }
 
-function chargerpoints_de_vente (){
-    fetch('./commerces')
+document.addEventListener('DOMContentLoaded', (event) => {
+    fetch('../data/repo/commerces.json')
         .then(commerces => {return commerces.json()})
         .then(data => genererMagasin(data) )
-}
+});
