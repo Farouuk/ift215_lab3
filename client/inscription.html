@@ -1,61 +1,67 @@
-<h1 id="para-1" class="centrer">Inscription au Pro-Gramme</h1>
-<section id="menu-gauche">
-    <a href="#para-1">Premier paragraphe</a>
-    <a href="#para-2">Second paragraphe</a>
-    <a href="#para-3">Troisième paragraphe</a>
-</section>
-<section id="section-inscription">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam at consectetur consequuntur doloremque eligendi et illum iusto maxime necessitatibus odit perspiciatis porro, temporibus tenetur voluptas voluptatem voluptatum. Libero, officia!</p>
-    <table id="table-inscription">
-        <caption>Types d'abonnement</caption>
-        <tr>
-            <th>Type</th>
-            <th>Prix</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Basique</td>
-            <td>15$</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>50$</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-        <tr>
-            <td>Entraîneur</td>
-            <td rowspan="2">75$</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-        <tr>
-            <td>Athlète</td>
-            <!--<td>75$</td>-->
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae consequatur corporis distinctio doloremque dolorum excepturi!</td>
-        </tr>
-    </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Farouk Oussaada">
+    <meta name="author" content="Yanis Gharbi">
+    <meta name="description" content="Pro-gramme, ajoute d'un point sur la toile">
+    <meta name="keywords" content="Suppléments aliments, protéines">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Inscription à pro-gramme</title>
+
+    <script src="scripts/inscription.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Logo de Pro-Gramme" /></a>
+        <div id="menu-principal">
+            <div class="barre-menu">
+                <a href="accueil.html" >Accueil</a>
+                <a href="#">Inscription</a>
+                <a href="produits.html">Produits</a>
+                <div class="deroulant"><button class="btn-deroulant">À propos</button>
+                    <div class="sous-menu">
+                        <a href="points_de_vente.html">Points de ventes</a>
+                        <a href="histoire.html">Notre histoire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="corps-principal">
+    <h1>Inscription au Pro-Gramme</h1>
+    <section id="menu-gauche">
+        <a href="#para-1">Premier paragraphe</a>
+        <a href="#para-2">Second paragraphe</a>
+        <a href="#para-3">Troisième paragraphe</a>
+    </section>
+    <section id="section-inscription">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim labore laudantium libero maxime, molestiae neque non sit ullam ut. Asperiores, commodi culpa dolores labore nesciunt nobis quisquam ratione reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi consequuntur dolorem, eveniet inventore, magni modi nam nihil non repudiandae sed suscipit voluptatum. Atque explicabo fugiat, harum minima numquam tempora!</p>
+    </section>
     <form method="post" action="confirmation.html">
         <fieldset id="#renseignement-auth">
-            <legend>Renseignements d'authentification</legend>
+            <legend>Renseignement d'authentification</legend>
             <div class="group">
                 <label for="prenom">Prénom</label>
                 <input type="text" name="prenom" id="prenom" required/>
             </div>
             <div class="group">
                 <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" required/>
+                <input type="text" name="nom" id="nom" />
             </div>
             <div class="group">
                 <label for="courriel">Adresse courriel</label>
-                <input type="email" name="courriel" id="courriel" required/>
+                <input type="email" name="courriel" id="courriel" />
             </div>
             <div class="group">
                 <label for="mot-de-passe">Mot de passe</label>
-                <input type="password" name="mot-de-passe" id="mot-de-passe" required/>
+                <input type="password" name="mot-de-passe" id="mot-de-passe" />
             </div>
         </fieldset>
         <fieldset>
-            <legend>Renseignements d'inscription</legend>
+            <legend>Renseignement d'inscription</legend>
             <div class="group">
                 <label for="type-abonnement">Type d'abonnement</label>
                 <select name="type-abonnement" id="type-abonnement">
@@ -69,5 +75,10 @@
             <input type="submit" value="Soumettre">
         </div>
     </form>
-</section>
+</div>
+<footer>
+    Pro-Gramme - Tous droits réservés
+</footer>
 
+</body>
+</html>
