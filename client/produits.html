@@ -21,7 +21,7 @@
           crossorigin="anonymous"></script>
   <script src="scripts/inscription.js"></script>
   <script src="scripts/navigation.js"></script>
-  <script src="scripts/produit.js"></script>
+  <script src="scripts/produits.js"></script>
 
 </head>
 <body>
@@ -49,7 +49,16 @@
       <div class="offset-md-10 col-md-2">
         <div class="input-group mb-3">
           <input type="search" class="form-control" placeholder="search">
-          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <span class="input-group-text"><i class="bi-search"></i></span>
+          <a href="panier.html" class="">
+            <button type="button" class="btn btn-primary position-relative">
+              <i class="bi bi-cart-plus"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge roundedpill bg-danger"
+                    id="item_counter">
+ 0
+ </span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

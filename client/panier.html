@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Farouk Oussaada">
@@ -5,12 +7,21 @@
     <meta name="description" content="Pro-gramme, ajoute d'un point sur la toile">
     <meta name="keywords" content="Suppléments aliments, protéines">
 
+    <title>Pro-Gramme</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/main.css">
 
-    <script src="scripts/points_de_vente.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+    <script src="scripts/produits.js"></script>
 
 </head>
 <header>
@@ -31,30 +42,18 @@
         </div>
     </nav>
 </header>
-
-<div id="corps-principal">
-    <h1 id="para-1" class="centrer">Nos points de vente</h1>
-    <section id="menu-gauche">
-        <a href="#para-1">Haut de page</a>
-        <a href="#para-2">Points de ventes au Canada</a>
-        <a href="#para-3">Points de ventes à l'international</a>
-    </section>
-    <section id="section-pdv">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid animi eligendi iure, molestias, necessitatibus nostrum numquam placeat sapiente sit tempore totam vel voluptatem? Dicta explicabo libero officiis quisquam repellat.</p>
-        <h2 id="para-2">Points de ventes au Canada</h2>
-        <section id="pdv-grille">
-            <article class="pdv-item">
-                <h1>Sherbrooke</h1>
-                <address>1000 rue King Est</address>
-                <h2>Heures d'ouverture: </h2>
-                <ul>
-                    <li>Lundi au vendredi 9h à 19h</li>
-                    <li>Samedi et dimanche 9h à 16h</li>
-                </ul>
-            </article>
-        </section>
-        <h2 id="para-3">Points de ventes à l'international</h2>
-        <section id="pdv-flex">
-        </section>
-    </section>
-</div>
+<body>
+<br>
+<table id=tablePanier class="tablePanier">
+    <tr>
+        <th class="panierHeader">Nom</th>
+        <th class="panierHeader">Prix</th>
+        <th class="panierHeader">Qte</th>
+        <th class="panierHeader">Total</th>
+    </tr>
+</table>
+<br>
+<br>
+<h2 class="totalPanier">Total: </h2>
+</body>
+</html>
